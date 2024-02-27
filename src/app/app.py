@@ -1,0 +1,93 @@
+import tkinter as tk  
+from tkinter import ttk  
+from app.frames import AddCourse, MainPanel, AddStudent
+
+from app.config import utils, color
+
+class LeftFrameButton(tk.Button):
+	def __init__(self, master, text, width=20, command=None):
+		super().__init__(
+			master=master,
+			text=text,
+			width=width,
+			height=1,
+			bg=color.BLUE,
+			fg=color.WHITE,
+			relief='groove',
+			borderwidth=1,
+			command=command
+		)
+
+class LeftFrame(tk.Frame):
+	def __init__(self, master):
+		super().__init__(
+			master=master,
+			bg=color.BLUE,
+			width=200,
+			height=500
+		)
+		self.master = master
+		# construct the message enum
+		self.message = Message()
+		self.title()
+		self.buttons()
+		self.place_buttons()
+
+	def title(self):
+		title1 = tk.Label(self, text="Simple Student\nInformation System", fg=color.WHITE, bg=color.BLUE)
+		title1.place(relx=0.5, rely=0.15, anchor=tk.CENTER)
+
+	def buttons(self):
+		self.add_course = LeftFrameButton(self, text="Add Course", command=self.master.add_course_button)
+		self.add_student = LeftFrameButton(self, text="Add Student", command=self.master.add_student_button)
+		self.list_courses = LeftFrameButton(self, text="List Courses")
+		self.list_students = LeftFrameButton(self, text="List Students")
+		self.quit_button = LeftFrameButton(
+			self, 
+			text="Quit",
+			width="10",
+			command=self.master.destroy
+		)
+
+	def place_buttons(self):
+		self.add_course.place(relx=0.5, rely=0.3, anchor=tk.CENTER)
+		self.add_student.place(relx=0.5, rely=0.38, anchor=tk.CENTER)
+		self.list_courses.place(relx=0.5, rely=0.46, anchor=tk.CENTER)
+		self.list_students.place(relx=0.5, rely=0.54, anchor=tk.CENTER)
+		self.quit_button.place(relx=0.5, rely=0.8, anchor=tk.CENTER)
+
+# Message Enum, used for states.
+class Message:
+	def __init__(self):
+		self.add_course = False
+		self.add_student = False
+		self.list_courses = False 
+		self.list_students = False
+
+
+class StudentSystem(tk.Tk):
+	def __init__(self):
+		super().__init__()
+		self.title = "Student System"
+		self.geometry("800x500")
+		self.resizable(False, False)
+		self.configure(
+			bg=color.PEACH
+		)
+
+
+		self.left_panel = LeftFrame(self)
+		self.left_panel.place(x=0, y=0)
+		self.load_main_frame()
+
+	def load_main_frame(self):
+		self.starter_panel = MainPanel(self)
+		self.starter_panel.place(x=200, y=0)
+
+	def add_course_button(self):
+		self.add_course_panel = AddCourse(self)
+		self.add_course_panel.place(x=200, y=0)
+
+	def add_student_button(self):
+		self.add_student_panel = AddStudent(self)
+		self.add_student_panel.place(x=200, y=0)
