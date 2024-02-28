@@ -53,17 +53,28 @@ class AddCourse(tk.Frame):
 
 		self.add_button = tk.Button(
 			self,
-			text="NEXT",
+			text="ADD",
 			width=7,
 			height=1,
 			font=('Default', 13),
 			bg=color.PEACH,
 			fg=color.CHARCOAL,
-			command=self.clear_button_callback
+			command=self.add_button_callback
 		).place(relx=0.8, rely=0.8, anchor=tk.CENTER)
 
+	def success_notif(self):
+		self.success_label = tk.Label(self, text="Course has been uccessfully added", font=('Default', 13), bg=color.PEACH, fg=color.PAPAYA).place(relx=0.5, rely=0.9, anchor=tk.CENTER)
+
+
 	def add_button_callback(self):
-		pass
+		entry = {
+			"id": self.id_entry.get(),
+			"name": self.name_entry.get(),
+			"description":self.description_entry.get()
+		}
+		utils.course.insert_one(entry)
+		self.success_notif()
+		self.clear_button_callback()
 
 	def clear_button_callback(self):
 		self.id_entry.delete(0, tk.END)
