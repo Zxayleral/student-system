@@ -65,11 +65,11 @@ class Parser:
 					writer.writerow(student)
 
 student = Parser(
-	filename="./data/csv/students.csv", 
+	filename="./src/app/config/data/csv/students.csv", 
 	header=["id", "name", "gender", "course"]
 )
 
 course = Parser(
-	filename="./data/csv/courses.csv",
+	filename="./src/app/config/data/csv/courses.csv",
 	header=["id", "name", "description"]
 )
