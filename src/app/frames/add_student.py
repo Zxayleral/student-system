@@ -32,6 +32,8 @@ class AddStudent(tk.Frame):
 		self.gender_entry.current()
 		self.gender_entry.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
+		self.course_entry_label = tk.Label
+
 
 		# buttons
 		self.clear_button = tk.Button(
