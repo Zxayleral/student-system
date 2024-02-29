@@ -27,11 +27,9 @@ class ListCoursesBox(tk.Listbox):
 
 	def on_selection(self, event):
 		selected = self.curselection()
-		print(list(selected)[0])
 		self.master.master.current_index = list(selected)[0]
 		self.master.master.add_frame(list(selected)[0])
 
-		
 # the panel for the list courses button in the main app class.
 class ListCourses(tk.Frame):
 	def __init__(self, master):

@@ -26,7 +26,6 @@ class ListStudentsBox(tk.Listbox):
 
     def on_selection(self, event):
         selected = self.curselection()
-        print(list(selected)[0])
         self.master.master.add_frame(list(selected)[0])
 
         
