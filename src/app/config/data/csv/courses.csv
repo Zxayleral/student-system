@@ -1,43 +1,31 @@
-id,name
-CBT,Certificate in Building Technology
-BLA,Bachelor of Landscape Architecture
-BS Arch,Bachelor of Science in Architecture
-M Arch,Master of Architecture
-MTLA,Master of Tropical Landscape Architecture
-BSNB,bachelor of science in nigga balls		
-SMPF,Department of Accounting and Finance
-CTA,Bachelor of Science in Business Administration
-MPS,Master of Business Administration
-MAS,Master of Science in Finance
-MAAS,Master of Science in Management
-MAPS,Bachelor of Science in Business Administration and Accountancy
-BSBA,Bachelor of Science in Business Administration
-BEEd,Bachelor of Elementary Education
-BSEd,Bachelor of Secondary Education
-MAEd,Master of Arts in Education
-PhD Educ,Doctor of Philosophy in Education
-BS CE,Bachelor of Science in Civil Engineering
-MS CE,Master of Science in Civil Engineering
-BS ChE,Bachelor of Science in Chemical Engineering
-MS ChE,Master of Science in Chemical Engineering
-DEngg ChE,Doctor of Engineering (Chemical Engineering)
-BS CS,Bachelor of Science in Computer Science
-MS CS,Master of Science in Computer Science
-BS CoE,Bachelor of Science in Computer Engineering
-BS EE,Bachelor of Science in Electrical Engineering
-BS ECE,Bachelor of Science in Electronics and Communications Engineering
-MEng EE,Master of Engineering in Electrical Engineering
-MSEE,Master of Science in Electrical Engineering
-DEngg EEE,Doctor of Engineering (Electrical and Electronics Engineering)
-BS GE,Bachelor of Science in Geodetic Engineering
-Dipl. RS,Diploma in Remote Sensing
-MS GmE,Master of Science in Geomatics Engineering
-BS IE,Bachelor of Science in Industrial Engineering
-Dipl. IE,Diploma in Industrial Engineering
-MS IE,Master of Science in Industrial Engineering
-MEng IE,Master of Engineering in Industrial Engineering
-BS ME,Bachelor of Science in Mechanical Engineering
-MS ME,Master of Science in Mechanical Engineering
-BSBS,Bachelor of Science in Baby Sitting	
+id,name
+CBT,Certificate in Building Technology
+BS Arch,Bachelor of Science in Architecture
+MTLA,Master Of Tropical Landscape Architecture
+MAS,Master of Science in Finance
+MAAS,Master Of Science In Management
+MAPS,Bachelor of Science in Business Administration and Accountancy
+BSEd,Bachelor of Secondary Education
+MS CE,Master of Science in Civil Engineering
+MS ChE,Master of Science in Chemical Engineering
+DEngg ChE,Doctor of Engineering (Chemical Engineering)
+BS CS,Bachelor of Science in Computer Science
+MS CS,Master of Science in Computer Science
+BS CoE,Bachelor of Science in Computer Engineering
+BS EE,Bachelor of Science in Electrical Engineering
+BS ECE,Bachelor of Science in Electronics and Communications Engineering
+MEng EE,Master of Engineering in Electrical Engineering
+DEngg EEE,Doctor of Engineering (Electrical and Electronics Engineering)
+BS GE,Bachelor of Science in Geodetic Engineering
+Dipl. RS,Diploma in Remote Sensing
+MS GmE,Master of Science in Geomatics Engineering
+BS IE,Bachelor of Science in Industrial Engineering
+Dipl. IE,Diploma in Industrial Engineering
+MS IE,Master of Science in Industrial Engineering
+MEng IE,Master of Engineering in Industrial Engineering
+BS ME,Bachelor of Science in Mechanical Engineering
+MS ME,Master of Science in Mechanical Engineering
+BSBS,Bachelor of Science in Baby Sitting	
 BSCE,Bachelor of Science in Civil Engineering
 BSCA,Computer Applications
+BSP6,Bachelor Of Science In P6
