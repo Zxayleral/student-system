@@ -27,12 +27,14 @@ class AddStudent(tk.Frame):
 			"Male", "Female", "Male (Born Female)", "Female (Born Male)",
 			"Croissant", "Attack Helicopter", "Trans Racist", "Male (Born Alone)",
 			"Female (Left by Dad)", "Non-Binary (Raised by Aliens)", "Male (Filipino)",
-			"Female (Filipino)", "Female (Afam Enjoyer)", "Male (Alpha)", "Sigma", "Chill Bastard"
+			"Female (Filipino)", "Female (Afam Enjoyer)", "Male (Alpha)", "Sigma", "Chill Bastard",
+			"Autobots", "Formula 1", "Male (Born with yapper syndrome)", "Female (Chinese) [must be not more than a day year old]"
 		]
 		self.gender_entry.current()
 		self.gender_entry.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
-		self.course_entry_label = tk.Label(self, text="Course: ", font=('Default', 13), bg=color.PEACH, fg=color.CHARCOAL).place(relx=0.)
+		self.course_entry_label = tk.Label(self, text="Course: ", font=('Default', 13), bg=color.PEACH, fg=color.CHARCOAL).place(relx=0.254, rely=0.6, anchor='center')
+		
 
 
 		# buttons
