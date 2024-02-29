@@ -1,3 +1,5 @@
+# imports all the main Frames from all the files below.
+
 from .add_course import AddCourse
 from .starter import MainPanel
 from .add_student import AddStudent
