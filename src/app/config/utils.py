@@ -27,17 +27,15 @@ class Parser:
 
 	def edit_data(self, index, document):
 		self.initialize()
-		if not self.check(document):
-			return False
-		else:
-			collections = self.read_all()
-			with open(self.filename, "w") as file:
-				writer = csv.DictWriter(file, fieldnames=self.header)
-				for idx, collection in enumerate(collections):
-					if idx == index + 1:
-						writer.writerow(document)
-					else:
-						writer.writerow(document)
+		collections = self.read_all()
+		with open(self.filename, "w") as file:
+			writer = csv.DictWriter(file, fieldnames=self.header)
+			writer.writeheader()
+			for idx, collection in enumerate(collections):
+				if idx == index:
+					writer.writerow(document)
+				else:
+					writer.writerow(collection)
 
 
 	def count(self):
