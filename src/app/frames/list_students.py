@@ -49,7 +49,7 @@ class ListStudents(tk.Frame):
         self.student_id_label = tk.Label(self.bottom_frame, text="Student ID:", bg=color.BLUE, fg=color.PAPAYA).place(relx=0.17, rely=0.14, anchor=tk.CENTER)
         self.student_name_label = tk.Label(self.bottom_frame, text="Student Name:", bg=color.BLUE, fg=color.PAPAYA).place(relx=0.15, rely=0.27, anchor=tk.CENTER)
         self.student_gender_label = tk.Label(self.bottom_frame, text="Student Gender:", bg=color.BLUE, fg=color.PAPAYA).place(relx=0.15, rely=0.40, anchor=tk.CENTER)
-        self.student_course = tk.Label(self.bottom_frame, text="Student Course:", bg=color.BLUE, fg=color.PAPAYA).place(relx=0.15, rely=0.53, anchor=tk.CENTER)
+        self.student_course_label = tk.Label(self.bottom_frame, text="Student Course:", bg=color.BLUE, fg=color.PAPAYA).place(relx=0.15, rely=0.53, anchor=tk.CENTER)
         self.student_enrollement_label = tk.Label(self.bottom_frame, text="Student Status: ", bg=color.BLUE, fg=color.PAPAYA).place(relx=0.14, rely=0.66, anchor=tk.CENTER)
 
     def add_list_box(self):
@@ -82,10 +82,14 @@ class ListStudents(tk.Frame):
             self.done_button.place_forget()
             self.list_box.destroy()
             self.add_list_box()
+            self.bottom_frame.destroy()
+            self.add_frame(self.current_index)
 
         def edit_button_callback():
             self.student_name.config(state='normal')
             self.student_id.config(state='normal')
+            self.student_gender.config(state='normal')
+            self.student_course.config(state='normal')
             self.edit_button.place_forget()
             self.done_button.place(relx=0.8, rely=0.85, anchor=tk.CENTER)
 
