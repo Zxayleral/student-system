@@ -1,6 +1,6 @@
 import tkinter as tk  
 from tkinter import ttk  
-from app.frames import AddCourse, MainPanel, AddStudent, ListCourses
+from app.frames import AddCourse, MainPanel, AddStudent, ListCourses, ListStudents
 
 from app.config import utils, color
 
@@ -41,7 +41,7 @@ class LeftFrame(tk.Frame):
 		self.add_course = LeftFrameButton(self, text="Add Course", command=self.master.add_course_button)
 		self.add_student = LeftFrameButton(self, text="Add Student", command=self.master.add_student_button)
 		self.list_courses = LeftFrameButton(self, text="List Courses", command=self.master.list_courses_button)
-		self.list_students = LeftFrameButton(self, text="List Students")
+		self.list_students = LeftFrameButton(self, text="List Students", command=self.list_students_panel)
 		self.quit_button = LeftFrameButton(
 			self, 
 			text="Quit",
@@ -96,3 +96,6 @@ class StudentSystem(tk.Tk):
 		self.list_courses_panel = ListCourses(self)
 		self.list_courses_panel.place(x=200, y=0)
 
+	def list_students_button(self):
+		self.list_students_panel = ListStudents(self)
+		self.list_students_panel.place(x=200, y=0)
