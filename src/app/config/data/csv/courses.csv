@@ -1,41 +1,11 @@
-id,name,description
-1,CCC001,Computer Programming
-2,CCC002,Data Structures
-3,CCC003,Web Development
-4,CCC004,Database Management
-5,CCC005,Algorithms
-6,CCC006,Software Engineering
-7,CCC007,Networking
-8,CCC008,Artificial Intelligence
-9,CCC009,Cybersecurity
-10,CCC010,Mobile App Development
-11,CCC011,Machine Learning
-12,CCC012,Game Development
-13,CCC013,Cloud Computing
-14,CCC014,User Experience Design
-15,CCC015,Blockchain Technology
-16,CCC016,Internet of Things (IoT)
-17,CCC017,Front-End Development
-18,CCC018,Back-End Development
-19,CCC019,Full-Stack Development
-20,CCC020,Responsive Web Design
-21,CCC021,Database Administration
-22,CCC022,DevOps Practices
-23,CCC023,Agile Methodology
-24,CCC024,Version Control Systems
-25,CCC025,Software Testing
-26,CCC026,Computer Graphics
-27,CCC027,Computer Networks
-28,CCC028,Operating Systems
-29,CCC029,Computer Security
-30,CCC030,Data Analytics
-31,CCC031,Data Visualization
-32,CCC032,Human-Computer Interaction
-33,CCC033,Programming Languages
-34,CCC034,Software Architecture
-35,CCC035,Embedded Systems
-36,CCC036,Virtual Reality
-37,CCC037,Quantum Computing
-38,CCC038,Robotics
-39,CCC039,Wireless Communication
-40,CCC040,Geographic Information Systems (GIS)
+id,name
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
+BSCEE, Bachelor of Science in Electrical Engineering
