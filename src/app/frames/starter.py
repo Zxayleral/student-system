@@ -1,6 +1,13 @@
 import tkinter as tk  
 from app.config import color, utils
 
+"""
+starter.py
+
+this file contains the main/starter panel of the GUI.
+
+"""
+
 class MainPanel(tk.Frame):
 	def __init__(self, master):
 		super().__init__(
