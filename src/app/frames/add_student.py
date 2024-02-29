@@ -28,13 +28,7 @@ class AddStudent(tk.Frame):
 		self.name_entry.place(relx=0.5, rely=0.4, anchor=tk.CENTER)
 		self.gender_label = tk.Label(self, text="Gender:", font=('Default', 13), bg=color.PEACH, fg=color.CHARCOAL).place(relx=0.254, rely=0.5, anchor=tk.CENTER)
 		self.gender_entry = ttk.Combobox(self, width=17, font=('Default', 13))
-		self.gender_entry["values"] = [
-			"Male", "Female", "Male (Born Female)", "Female (Born Male)",
-			"Croissant", "Attack Helicopter", "Trans Racist", "Male (Born Alone)",
-			"Female (Left by Dad)", "Non-Binary (Raised by Aliens)", "Male (Filipino)",
-			"Female (Filipino)", "Female (Afam Enjoyer)", "Male (Alpha)", "Sigma", "Chill Bastard",
-			"Autobots", "Formula 1", "Male (Born with yapper syndrome)", "Female (Chinese) [must be not more than a day year old]"
-		]
+		self.gender_entry["values"] = ["Male", "Female", "LGBTQ+"] # these values are just suggestions.
 		self.gender_entry.current()
 		self.gender_entry.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
