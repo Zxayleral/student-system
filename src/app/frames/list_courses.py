@@ -46,7 +46,6 @@ class ListCourses(tk.Frame):
 		self.top_frame.grid(row=0, column=0, padx=20, pady=20)
 		self.top_frame.place()
 		data = utils.course.read_all()
-		print(data)
 		if len(data):
 			self.list_box = ListCoursesBox(self.top_frame)
 			self.list_box.configure(justify=tk.CENTER)
@@ -63,9 +62,7 @@ class ListCourses(tk.Frame):
 				"id": self.course_id.get("1.0", tk.END).strip("\n"),
 				"name": self.course_name.get("1.0", tk.END).strip("\n")
 			}
-
-			data = utils.course.fetch_one(self.current_index)
-			utils.course.edit_data(self.current_index, data)
+			utils.course.edit_data(self.current_index, edited_document)
 
 			self.course_name.config(state='disabled')
 			self.course_id.config(state='disabled')
