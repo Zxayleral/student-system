@@ -32,14 +32,6 @@ class AddCourse(tk.Frame):
 								   fg=color.CHARCOAL, font=('Default', 13))
 		self.name_entry.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
-		self.description_label = tk.Label(self, text="Description:", font=('Default', 13),
-										  bg=color.PEACH, fg=color.CHARCOAL).place(relx=0.224, rely=0.6, anchor=tk.CENTER)
-
-		self.description_entry = tk.Entry(self, width=18, bg=color.PEACH,
-										  fg=color.CHARCOAL, font=('Default', 13)
-										  )
-		self.description_entry.place(relx=0.5, rely=0.6, anchor=tk.CENTER)
-
 		self.clear_button = tk.Button(
 			self,
 			text="CLEAR",
@@ -69,8 +61,7 @@ class AddCourse(tk.Frame):
 	def add_button_callback(self):
 		entry = {
 			"id": self.id_entry.get(),
-			"name": self.name_entry.get(),
-			"description":self.description_entry.get()
+			"name": self.name_entry.get()
 		}
 		utils.course.insert_one(entry)
 		self.success_notif()
@@ -79,4 +70,3 @@ class AddCourse(tk.Frame):
 	def clear_button_callback(self):
 		self.id_entry.delete(0, tk.END)
 		self.name_entry.delete(0, tk.END)
-		self.description_entry.delete(0, tk.END)
