@@ -83,7 +83,8 @@ class ListStudents(tk.Frame):
             self.list_box.destroy()
             self.add_list_box()
             self.bottom_frame.destroy()
-            self.add_frame(self.current_index)
+            if utils.student.count():
+                self.add_frame(self.current_index)
 
         def edit_button_callback():
             self.student_name.config(state='normal')
