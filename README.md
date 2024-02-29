@@ -10,8 +10,7 @@ This project is made from Python 3.10 <= @latest
 </ul>
 
 
-## to run this program, just clone the app and run src/launcher.py
-
+## To run this program, just clone the app and run src/launcher.py
 
 ```diff
 # status 
