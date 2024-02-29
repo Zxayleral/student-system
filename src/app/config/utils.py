@@ -25,6 +25,21 @@ class Parser:
 				writer = csv.DictWriter(file, fieldnames=self.header)
 				writer.writeheader()
 
+	def edit_data(self, index, document):
+		self.initialize()
+		if not self.check(document):
+			return False
+		else:
+			collections = self.read_all()
+			with open(self.filename, "w") as file:
+				writer = csv.DictWriter(file, fieldnames=self.header)
+				for idx, collection in enumerate(collections):
+					if idx == index + 1:
+						writer.writerow(document)
+					else:
+						writer.writerow(document)
+
+
 	def count(self):
 		self.initalize()
 		with open(self.filename, "r") as file:
@@ -64,6 +79,11 @@ class Parser:
 				else:
 					writer.writerow(student)
 
+	def fetch_one(self, index):
+		self.initialize()
+		collections = self.read_all()
+		return collections[index]
+
 student = Parser(
 	filename="./src/app/config/data/csv/students.csv", 
 	header=["id", "name", "gender", "course"]
@@ -71,5 +91,5 @@ student = Parser(
 
 course = Parser(
 	filename="./src/app/config/data/csv/courses.csv",
-	header=["id", "name", "description"]
+	header=["id", "name"]
 )
