@@ -69,6 +69,8 @@ class AddStudent(tk.Frame):
 
 
 	def success_notif(self):
+		if self.current_notif is not None:
+			self.current_notif.destroy()
 		self.current_notif = tk.Label(self, text="Course has been successfully added!", font=('Default', 13), bg=color.PEACH, fg='black').place(relx=0.5, rely=0.9, anchor=tk.CENTER)
 
 	def error_notif(self, message):
