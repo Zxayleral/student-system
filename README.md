@@ -11,8 +11,16 @@ This project is made from Python 3.10 <= @latest
 
 
 ## To run this program, just clone the app and run src/launcher.py
+```bash
 
-```diff
-# status 
+# in linux
+python3 src/launcher.py
+
+# in windows
+py src/launcher.py
+```
+
+## Status
+```diff 
 + done
 ```
